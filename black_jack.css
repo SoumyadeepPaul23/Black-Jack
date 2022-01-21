@@ -1,0 +1,158 @@
+i{
+    position: absolute;
+    height: 10px;
+    background: linear-gradient(transparent,white);
+   border-bottom-left-radius: 5px;
+   border-bottom-right-radius: 5px;
+    animation: animate 5s linear infinite;
+    
+}
+i:nth-child(3n+1)
+{
+    background: linear-gradient(transparent,rgb(12, 243, 243));
+}
+i:nth-child(3n+2)
+{
+    background: linear-gradient(transparent,#0f0);
+}
+i:nth-child(3n+3)
+{
+    background: linear-gradient(transparent,#f00);
+}
+
+@keyframes animate {
+    0%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(99vh);
+    }
+}
+.container{
+    display: inline-block;
+ 
+}
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+    background-image: url("https://media.istockphoto.com/photos/empty-green-casino-poker-table-cloth-with-spotlight-picture-id1092139474?k=20&m=1092139474&s=170667a&w=0&h=b872CvcwkF1FL0g7oFR0q08VDhvKykyGqI3PzXjU-XI=");
+    background-size: cover;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    
+}
+
+/* .image img{
+    display: block;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow:  -2px 10px 40px 6px #006e3b;
+    animation-name:show;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+} */
+@keyframes show {
+    0%{
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(0.9);
+    }
+}
+
+h1 {
+    color: goldenrod;
+    font-size: 120px;
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #FFFF00, 0 0 40px #FFFF00, 0 0 50px #FFFF00, 0 0 60px #FFFF00, 0 0 70px #FFFF00;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #FE53BB, 0 0 40px #FE53BB, 0 0 50px #FE53BB, 0 0 60px #FE53BB, 0 0 70px #FE53BB, 0 0 80px #FE53BB;
+    }
+}
+#message-el {
+    font-style: italic;
+    font-size: 55px;
+    animation-duration: 1s;
+    transition-delay: 1s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes zoom {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+p{
+    font-size: 35px;
+}
+button {
+    color: #016f32;
+    width: 150px;
+    background: goldenrod;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin: 0 10px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+    font-size: 20px;
+}
+#refresh{
+    display: none;
+}
+@media(max-width:1000px){
+    body{
+        max-height: 95vh;
+        color: red;
+    }
+@keyframes animate {
+    0%{
+            transform: translateY(-10px);
+        }
+    100%{
+            transform: translateY(95vh);
+        }
+    }
+}
+.hm_btn{
+    position: fixed;
+    bottom: 90px;
+    list-style: none;
+}
+.home_button{
+    list-style: none;
+    position: fixed;
+    right: 1px;
+    right: 100px;
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+    background: goldenrod;
+    padding: 10px 10px;
+    border-radius: 50%;
+    border: 2px solid #016f32 ;
+}
+.home_button:hover{
+    color: white;
+}
+

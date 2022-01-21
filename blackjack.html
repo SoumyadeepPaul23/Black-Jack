@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="black_jack.css">
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSalRyvYWqdpSFPW5KKGhvGCFlidBtNF0EyxsIvDsekf2o2bhy0xoWrJz_AfsoVQxs9JlU&usqp=CAU">
+        <title>BlackJack</title>
+    </head>
+    <body>
+        
+ 
+        <div class="container">
+        <h1>BlackJack</h1>
+        <p id="message-el">Lets have a ROUND</p>
+        <p id="cards-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+        <button onclick="startGame()" id="strt">START GAME</button>
+        <button onclick="newCard()" id="newcrd">NEW CARD</button>
+        <button onclick="relad()" id="refresh">START A NEW GAME</button>
+        <!-- <p id="player-el"></p> -->
+        </div>
+        <div class="hm_btn">
+            <ul>
+                <a href="index.html" class="home_button"><ion-icon name="home-outline"></ion-icon> <br> Home</a>
+            </ul>
+        </div>
+        <script src="blackjack.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

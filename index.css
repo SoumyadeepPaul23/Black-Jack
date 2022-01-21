@@ -1,0 +1,332 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url("https://media.istockphoto.com/photos/empty-green-casino-poker-table-cloth-with-spotlight-picture-id1092139474?k=20&m=1092139474&s=170667a&w=0&h=b872CvcwkF1FL0g7oFR0q08VDhvKykyGqI3PzXjU-XI=");
+    background-size: cover;
+    color: white;
+}
+.logo{
+    margin: 20px 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.image img{
+    display: block;
+    margin: auto;
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow:  -2px 10px 40px 6px #006e3b;
+    animation-name:show;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+}
+@keyframes show {
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    50%{
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.line h2{
+    margin: 0px 0px;
+}
+.line{
+    position: relative;
+    top: 100px;
+    margin: 0 20px;
+    width: 8em; 
+    border-right:2px solid transparent ;
+    font-size: 30px;
+     text-transform: uppercase;
+    overflow: hidden;
+    letter-spacing: 4px;
+    padding-bottom: 5px;
+}
+.anim-typewriter{
+    animation: typewriter 4s steps(15) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) 12 normal;
+}
+@keyframes typewriter {
+    from{
+        width: 0em;
+        
+    }
+    to{
+        width: 8em;
+        color: goldenrod;
+    }
+}
+@keyframes blinkTextCursor {
+    from{
+     border-right-color: transparent;
+    }
+    to{
+     border-right-color:white;
+     
+    }
+}
+.line h2:after {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    height: 5px;
+    width: 0px;
+    background: rgba(255, 255, 255, 0.507);
+    transition: width .5s linear, background-color 1s ease;
+  }
+.line  h2:hover:after {
+    width: 100%;
+    background: goldenrod;
+  }
+.history{
+    margin-left: 20px;
+    position: relative;
+    top: 100px;
+}
+.history p{
+    margin-top: 20px;
+   
+}
+.btn{
+    position: relative;
+    top: 180px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.btn a{
+    position: relative;
+    display: inline-block;
+    margin: 0 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background:goldenrod;
+    letter-spacing: 2px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.btn a:hover{
+    color: #016f32;
+}
+.btn a .sp{
+    display: block;
+    position: absolute;
+    background: #016f32;
+}
+.btn a .sp:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.btn a:hover .sp:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+} 
+.btn a .sp:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.btn a:hover .sp:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+.btn a .sp:nth-child(3){
+   right: 0;
+    bottom: 0;
+    width: 4px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+.btn a:hover .sp:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transition: transform 0.5s;
+} 
+.btn a .sp:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 4px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+.btn a:hover .sp:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+/* .info{
+    max-width: 97.3vw;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    top: 300px;
+    width: 100%;
+    background-color: black; 
+    color: white;
+    height: 40px;display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+} */
+footer{
+    position: relative;
+    top: 300px;
+    max-width: 97.4vw;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+footer .info{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+footer .info .sec{
+    margin-right: 30px;
+}
+footer .info .sec.aboutus{
+    width: 40%;
+}
+footer .info h2{
+    position: relative;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+footer .info h2::before{
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background:white;
+    transition: width .5s linear, background-color 1s ease;
+}
+  footer .info h2:hover::before {
+    width: 50%;
+    background: white;
+  }
+footer p{
+    color: #999;
+}
+.sci{
+    margin-top: 20px;
+    display: flex;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+.sci li a:hover{
+  background: rgb(75, 75, 75);
+}
+.sci li a .fa{
+    color: #fff;
+    font-size: 20px;
+}
+.quickLinks{
+    position: relative;
+    width: 25%;
+}
+
+.quickLinks ul li{
+    list-style: none;
+}
+.quickLinks ul li a{
+    color: #999;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.quickLinks ul li a:hover{
+    color:#fff;
+}
+.contact{
+    width: calc(35% - 60px);
+    margin-right: 0 !important;
+}
+.contact .info{
+    position: relative;
+}
+.contact .info li{
+    display: flex;
+    margin-bottom: 16px;
+}
+.contact .info li span:nth-child(1){
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact .info li span{
+    color: #999;
+}
+.contact .info li a{
+    color: #999;
+    text-decoration: none;
+}
+.contact .info li a:hover{
+    color: #fff;
+}
+footer .copyright{
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    
+    background-color: rgb(51, 51, 51);
+    height: 40px;
+    width: 100%;
+}
+footer .copyright p{
+    position: absolute;
+    top: 10px;
+    color: white;
+    margin-left: 20px;
+}
